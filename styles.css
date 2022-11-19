@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: #161a1d;
+    color: #f5f3f4;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.firstPage{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+.italo{
+    box-sizing: border-box;
+    display: flex;
+    height: 70vh;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+#italoPrimeiro{
+    width: 50%;
+    height: auto;
+    padding-left: 30px;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    color: rgb(173, 217, 255);
+}
+.italoApresentation{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 20%;
+    gap: 50px;
+}
+.italoApresentation2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.secondPage{
+    background-image: url("./img/corolla-frente.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: aqua;
+    text-shadow: 3px 3px black;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.preSecondPage{
+    height: 20vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+}
+.prePreSecondPage{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#viajeCom{
+    font-size: 2rem;
+}
+#viajeComItens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+.thirdPage{
+    color: #56C6A9;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    text-shadow: 3px 3px black;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.fourthPage{
+    background-image: url("./img/corolla-tras.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fifthPage{
+    min-height: 100vh;
+
+}
+
+@media only screen and (max-width: 550px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .firstPage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .italo{
+        box-sizing: border-box;
+        padding-top: 20px;
+        display: flex;
+        height: 50vh;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+    #italoPrimeiro{
+        width: 200px;
+        height: auto;
+        padding-left: 5px;
+    }
+    .italoApresentation{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 60%;
+    }
+    .preSecondPage{
+        height: 40vh;
+        font-size: 1.6rem;
+    }
+    .prePreSecondPage{
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    #corollaFrenteTransparente{
+        width: 90vw;
+        height: auto;
+    }
+    #thirdPageItens1, #thirdPageItens2, #thirdPageItens3{
+        padding: 20px;
+        text-align: center;
+        text-justify: inter-word;
+    }
+  }
+
+  
