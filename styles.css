@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -95,7 +96,8 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
 
-    color: aqua;
+    color: rgb(173, 217, 255);
+    font-family: 'Montserrat', sans-serif;
     text-shadow: 3px 3px black;
     font-weight: 600;
     display: flex;
@@ -110,6 +112,7 @@ h2{
     gap: 25px;
     justify-items: center;
     align-items: center;
+    font-family: 'Kalam', cursive;
 }
 .prePreSecondPage{
     height: 10vh;
@@ -130,6 +133,7 @@ h2{
 }
 .thirdPage{
     color: #56C6A9;
+    font-family: 'Kalam', cursive;
     background-repeat: no-repeat;
     background-attachment: scroll;
 
@@ -142,15 +146,101 @@ h2{
 }
 .fourthPage{
     background-image: url("./img/corolla-tras.jpg");
-    min-height: 500px;
+    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.fourthPageTitle{
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(173, 217, 255);
+    text-shadow: 2px 2px black;
+}
 .fifthPage{
-    min-height: 100vh;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.fifthPage img{
+    padding-top: 50px;
+    width: 50%;
+    height: auto;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.sixthPage{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(400px, 1fr));
+    justify-items: center;
+}
+.sixthPage img{
+    width: 80%;
+    height: auto;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.seventhPage{
+    padding-top: 50px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contJa{
+    font-size: 6rem;
+    font-weight: 900;
+    color: #56C6A9;
+    font-family: 'Kalam', cursive;
+    text-shadow: 3px 3px blue;
+    padding-top: 80px;
+}
+.seventhPage img{
+    width: 20%;
+    height: auto;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+#whatsGmailIcons{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#whatsGmailIcons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#voltarAoTopo{
+    padding-bottom: 50px;
+    font-size: 1.2rem;
+}
+footer{
+    min-height: 8vh;
+    font-size: 1.1rem;
+    background-color: rgb(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -187,7 +277,7 @@ h2{
     }
     .preSecondPage{
         height: 40vh;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .prePreSecondPage{
         height: 10vh;
@@ -205,6 +295,26 @@ h2{
         text-align: center;
         text-justify: inter-word;
     }
-  }
+    .fourthPage{
+        min-height: 400px;
+    }
+    .fourthPageTitle{
+        padding: 20px;
+        text-align: center;
+        text-justify: inter-word;
+    }
+    #contJa{
+        text-align: center;
+        text-justify: inter-word;
+    }
+    
+    .seventhPage img{
+        width: 50%;
+        height: auto;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+}
 
   
