@@ -24,11 +24,12 @@ const openModal = document.querySelector('#buttonContato');
 const closeModal = document.querySelector('#close-page');
 
 openModal.addEventListener('click', ()=>{
-    modal.setAttribute('style',"display:flex")  
+    modal.setAttribute('style',"display:flex")
     });
 
 closeModal.addEventListener('click', ()=>{
-        modal.setAttribute('style',"display: none")
+        modal.setAttribute('style',"display: none");
+
     });
 
 document.addEventListener("click", (e) => {
@@ -36,3 +37,24 @@ document.addEventListener("click", (e) => {
           modal.setAttribute("style", "display:none");
         }
       });
+
+//Open and close modal2
+const modal2 = document.querySelector(".fullscreen-container2");
+const openModal2 = document.querySelector('#buttonFormasDePagamento');
+const closeModal2 = document.querySelector('#close-page2');
+
+openModal2.addEventListener('click', ()=>{
+    modal2.setAttribute('style',"display:flex")
+    });
+
+closeModal2.addEventListener('click', ()=>{
+        modal2.setAttribute('style',"display: none");
+
+    });
+
+document.addEventListener("click", (e) => {
+        if (e.target == modal2) {
+          modal2.setAttribute("style", "display:none");
+        }
+    });
+
