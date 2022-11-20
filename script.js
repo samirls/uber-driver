@@ -58,3 +58,129 @@ document.addEventListener("click", (e) => {
         }
     });
 
+//Open and close modal3
+const modal3 = document.querySelector(".fullscreen-container3");
+const openModal3 = document.querySelector('#buttonImagens');
+const closeModal3 = document.querySelector('#close-page3');
+
+openModal3.addEventListener('click', ()=>{
+    modal3.setAttribute('style',"display:flex")
+    });
+
+closeModal3.addEventListener('click', ()=>{
+        modal3.setAttribute('style',"display: none");
+
+    });
+
+document.addEventListener("click", (e) => {
+        if (e.target == modal3) {
+          modal3.setAttribute("style", "display:none");
+        }
+    });
+
+//carousel
+let carousel = 1;
+
+document.getElementById("photoForward").addEventListener("click", forward);
+document.getElementById("photoBack").addEventListener("click", back);
+
+function forward() {
+  carousel += 1;
+  if (carousel === 1) {
+    document.getElementById("carouselImage9").setAttribute('style',"display: none");
+    document.getElementById("carouselImage1").setAttribute('style',"display: block");
+  }
+  if (carousel === 2) {
+    document.getElementById("carouselImage1").setAttribute('style',"display: none");
+    document.getElementById("carouselImage2").setAttribute('style',"display: block");
+  }
+  if (carousel === 3) {
+    document.getElementById("carouselImage2").setAttribute('style',"display: none");
+    document.getElementById("carouselImage3").setAttribute('style',"display: block");
+  }
+  if (carousel === 4) {
+    document.getElementById("carouselImage3").setAttribute('style',"display: none");
+    document.getElementById("carouselImage4").setAttribute('style',"display: block");
+  }
+  if (carousel === 5) {
+    document.getElementById("carouselImage4").setAttribute('style',"display: none");
+    document.getElementById("carouselImage5").setAttribute('style',"display: block");
+  }
+  if (carousel === 6) {
+    document.getElementById("carouselImage5").setAttribute('style',"display: none");
+    document.getElementById("carouselImage6").setAttribute('style',"display: block");
+  }
+  if (carousel === 7) {
+    document.getElementById("carouselImage6").setAttribute('style',"display: none");
+    document.getElementById("carouselImage7").setAttribute('style',"display: block");
+  }
+  if (carousel === 8) {
+    document.getElementById("carouselImage7").setAttribute('style',"display: none");
+    document.getElementById("carouselImage8").setAttribute('style',"display: block");
+  }
+  if (carousel === 9) {
+    document.getElementById("carouselImage8").setAttribute('style',"display: none");
+    document.getElementById("carouselImage9").setAttribute('style',"display: block");
+  }
+  if (carousel === 10) {
+    carousel = 1;
+    document.getElementById("carouselImage9").setAttribute('style',"display: none");
+    document.getElementById("carouselImage1").setAttribute('style',"display: block");
+  }
+  return document.getElementById("photoNumber").innerText = carousel;
+}
+function back() {
+  carousel -= 1;
+  if (carousel === 1) {
+    document.getElementById("carouselImage9").setAttribute('style',"display: none");
+    document.getElementById("carouselImage1").setAttribute('style',"display: block");
+    document.getElementById("carouselImage2").setAttribute('style',"display: none");
+  }
+  if (carousel === 2) {
+    document.getElementById("carouselImage1").setAttribute('style',"display: none");
+    document.getElementById("carouselImage2").setAttribute('style',"display: block");
+    document.getElementById("carouselImage3").setAttribute('style',"display: none");
+  }
+  if (carousel === 3) {
+    document.getElementById("carouselImage2").setAttribute('style',"display: none");
+    document.getElementById("carouselImage3").setAttribute('style',"display: block");
+    document.getElementById("carouselImage4").setAttribute('style',"display: none");
+  }
+  if (carousel === 4) {
+    document.getElementById("carouselImage3").setAttribute('style',"display: none");
+    document.getElementById("carouselImage4").setAttribute('style',"display: block");
+    document.getElementById("carouselImage5").setAttribute('style',"display: none");
+  }
+  if (carousel === 5) {
+    document.getElementById("carouselImage4").setAttribute('style',"display: none");
+    document.getElementById("carouselImage5").setAttribute('style',"display: block");
+    document.getElementById("carouselImage6").setAttribute('style',"display: none");
+  }
+  if (carousel === 6) {
+    document.getElementById("carouselImage5").setAttribute('style',"display: none");
+    document.getElementById("carouselImage6").setAttribute('style',"display: block");
+    document.getElementById("carouselImage7").setAttribute('style',"display: none");
+  }
+  if (carousel === 7) {
+    document.getElementById("carouselImage6").setAttribute('style',"display: none");
+    document.getElementById("carouselImage7").setAttribute('style',"display: block");
+    document.getElementById("carouselImage8").setAttribute('style',"display: none");
+  }
+  if (carousel === 8) {
+    document.getElementById("carouselImage7").setAttribute('style',"display: none");
+    document.getElementById("carouselImage8").setAttribute('style',"display: block");
+    document.getElementById("carouselImage9").setAttribute('style',"display: none");
+  }
+  if (carousel === 9) {
+    document.getElementById("carouselImage8").setAttribute('style',"display: none");
+    document.getElementById("carouselImage9").setAttribute('style',"display: block");
+    document.getElementById("carouselImage1").setAttribute('style',"display: none");
+  }
+  if (carousel === 0) {
+    carousel = 9;
+    document.getElementById("carouselImage8").setAttribute('style',"display: none");
+    document.getElementById("carouselImage1").setAttribute('style',"display: none");
+    document.getElementById("carouselImage9").setAttribute('style',"display: block");
+  }
+  return document.getElementById("photoNumber").innerText = carousel;
+}

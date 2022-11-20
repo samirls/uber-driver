@@ -90,7 +90,7 @@ h2{
 }
 .secondPage{
     background-image: url("./img/corolla-frente.jpg");
-    min-height: 500px;
+    min-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,10 +145,39 @@ h2{
     justify-content: space-around;
     align-items: center;
 }
+.thirdPage3{
+    color: #56C6A9;
+    font-family: 'Kalam', cursive;
+
+    text-shadow: 3px 3px black;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.thirdPage3 img{
+    height: auto;
+    width: 6%;
+}
+#stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thirdPage2{
+    background-image: url("./img/corolla-interior-tras.jpg");
+    font-size: 2.8rem;
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .fourthPage{
     background-image: url("./img/corolla-tras.jpg");
     font-size: 2.8rem;
-    min-height: 400px;
+    min-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,10 +259,6 @@ figure{
     align-items: center;
     justify-content: center;
 }
-#voltarAoTopo{
-    padding-bottom: 50px;
-    font-size: 1.2rem;
-}
 footer{
     min-height: 8vh;
     font-size: 1.1rem;
@@ -302,7 +327,7 @@ button:hover{
     color: red;
     transition: 0ms;
 }
-.fullscreen-container, .fullscreen-container2{
+.fullscreen-container, .fullscreen-container2, .fullscreen-container3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,7 +341,7 @@ button:hover{
     max-height: 120vh;
     max-width: 100vw;
   }
-  #modal, #modal2{
+  #modal, #modal2, #modal3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
@@ -336,12 +361,12 @@ button:hover{
     font-size: 1.5rem;
     gap:20px;
 }
-#close-page img, #close-page2 img{
+#close-page img, #close-page2 img, #close-page3 img{
     height: auto;
     width: 30px;
     transition: 500ms;
 }
-#close-page img:hover, #close-page2 img:hover{
+#close-page img:hover, #close-page2 img:hover, #close-page3 img:hover{
     cursor: pointer;
     transform:rotate(180deg);
     scale: 1.3;
@@ -360,7 +385,6 @@ button:hover{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-
 }
 #modalName{
     grid-column: 1 / 3;
@@ -424,11 +448,53 @@ button:hover{
     grid-column: 1 / 4;
     grid-row: 5;
 }
+#close-page3{
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#modal3{
+    height: 90%;
+    width: 70%;
+}
 mark{
     background-color: rgba(255, 251, 0, 0.35);
     color: white;
 }
+.eighthPage{
+    height: 45vh;
+    overflow:hidden;
+}
+.eighthPage img{
+    height: auto;
+    width: auto;
+    border: 3px solid silver;
+    border-style:ridge;
+    max-height: 80%;
+    max-width: 100%;
+}
   
+/*----------> Carousel <-----------*/
+#carousel{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+#carouselButtons{
+    padding-top: 5px;
+    cursor: pointer;
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+}
+
 
 /*----------> MEDIA <-----------*/
 @media only screen and (max-width: 550px) {
@@ -556,8 +622,34 @@ mark{
         grid-column: 1 / 4;
         grid-row: 4;
     }
+    #stars img{
+        height: auto;
+        width: 12%;
+    }
+    .eighthPage{
+        height: 45vh;
+    }
+    .eighthPage img{
+        height: auto;
+        width: auto;
+        max-height: 80%;
+        max-width: 90%;
+    }
+    #carousel{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;    
+    }
+    #carouselButtons{
+        display: flex;
+        position:absolute;
+        top: 6580px;
+        text-shadow: 2px 2px black;
+    }
 
-    
 }
 
   
