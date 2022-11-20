@@ -9,6 +9,7 @@
     <title>Uber Driver</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="voltarTopo">Topo</button>
     <div class="firstPage">
         <div class="italo">
             <img id="italoPrimeiro" src="./img/italo-transparente.png">
@@ -22,7 +23,7 @@
     </div>
     <div class="preSecondPage">
         <div>
-            Contato
+            <button id="buttonContato">Contato</button>
         </div>
         <div>
             Formas de Pagamento
@@ -37,10 +38,10 @@
     <div class="secondPage">
         <div id="viajeCom">Viaje com:</div>
         <div id="viajeComItens">
-            <div>+ Segurança;</div>
-            <div>+ Conforto;</div>
-            <div>+ Qualidade;</div>
-            <div>+ Comodidade.</div>
+            <div><button>+ Segurança;</button></div>
+            <div><button>+ Conforto;</button></div>
+            <div><button>+ Qualidade;</button></div>
+            <div><button>+ Comodidade.</button></div>
         </div>
     </div>
     <br><br>
@@ -52,7 +53,7 @@
         <div id="thirdPageItens3">Que consegue atender a sua demanda com agilidade.</div><br><br><br> 
     </div>
     <div class="fourthPage">
-        <div class="fourthPageTitle">Quem conhece recomenda.</div>
+        <div class="fourthPageTitle"><button id="buttonQuem">Quem conhece recomenda.</button></div>
     </div>
     <div class="fifthPage">
         <figure>
@@ -88,12 +89,24 @@
             <a target="_blank" href="https://api.whatsapp.com/send?phone=5527997761863"><img src="./img/whatsapp.png"></a>
             <a href="mailto:samirlaguardiaii@gmail.com"><img src="./img/gmail.png"></a>
         </div>
-        <div id="voltarAoTopo">Voltar ao topo</div>
+        <div id="voltarAoTopo"></div>
     </div>
     <footer>
         <div>All Rights Reserved &#8482 &#174</div>
-        <div>WebMaster samirls</div>
+        <div><a href="mailto:samirlaguardiaii@gmail.com">WebMaster samirls</a></div>
     </footer>
-    
+    <div class="fullscreen-container" style="display: none;">
+        <div id="modal">
+            <div id="close-page"><img src="./img/close-circle-outline.png"></div>
+            <div id="modalName">Ítalo Devend Asturias</div>
+            <div id="modalPhone1">Celular / Whatsapp</div>
+            <div id="modalPhone2">(27)99776-1863</div>
+            <div id="modalPhone3"><a target="_blank" href="https://api.whatsapp.com/send?phone=5527997761863"><img src="./img/whatsapp.png" ></a></div>
+            <div id="modalEmail1">E-mail</div>
+            <div id="modalEmail2">samirlaguardiaii@gmail.com</div>
+            <div id="modalEmail3"><a href="mailto:samirlaguardiaii@gmail.com"><img src="./img/gmail.png"></a></div>
+
+        </div>
+    </div>
 </body>
 </html>
