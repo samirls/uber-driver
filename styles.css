@@ -63,6 +63,19 @@ body{
     justify-content: flex-start;
     align-items: center;
     align-content: center;
+
+    animation: italo 500ms ease-in 700ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+@keyframes italo{
+    0% {
+        transform: translatex(-200%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 #italoPrimeiro{
     width: 50%;
@@ -86,7 +99,19 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
+    animation: italoApresentation2 400ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+@keyframes italoApresentation2{
+    0% {
+        transform: translateY(-400%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 .secondPage{
     background-image: url("./img/corolla-frente.jpg");
@@ -121,6 +146,21 @@ h2{
     justify-content: center;
     align-items: center;
     align-content: center;
+
+    animation: prePreSecondPage 400ms ease-in;
+}
+.prePreSecondPage, #buttonContato, #buttonFormasDePagamento, #buttonImagens{
+    animation: prePreSecondPage 500ms ease-in-out 1300ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+@keyframes prePreSecondPage{
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 #viajeCom{
     font-size: 2rem;
