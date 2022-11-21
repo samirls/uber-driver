@@ -226,7 +226,6 @@ figure{
 }
 .seventhPage{
     padding-top: 50px;
-    min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,11 +243,10 @@ figure{
     height: auto;
     justify-items: center;
     gap: 10px;
-    padding: 10px;
 }
 #whatsGmailIcons{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,18 +314,19 @@ button:hover{
 #corollaFrenteTransparente, figure{
     transition: 500ms;
 }
-#buttonContato, #buttonFormasDePagamento{
+#buttonContato, #buttonFormasDePagamento, #buttonImagens{
     cursor: pointer;
     transition: 500ms;
 }
-#buttonContato:hover, #buttonFormasDePagamento:hover{
+#buttonContato:hover, #buttonFormasDePagamento:hover, #buttonImagens:hover{
     transform: scale(1.5);
 }
-#buttonContato:active, #buttonFormasDePagamento:active{
+#buttonContato:active, #buttonFormasDePagamento:active, #buttonImagens:active, 
+#photoBack:active, #photoForward:active{
     color: red;
     transition: 0ms;
 }
-.fullscreen-container, .fullscreen-container2, .fullscreen-container3{
+.fullscreen-container, .fullscreen-container2{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -341,7 +340,7 @@ button:hover{
     max-height: 120vh;
     max-width: 100vw;
   }
-  #modal, #modal2, #modal3{
+  #modal, #modal2{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
@@ -455,25 +454,20 @@ button:hover{
     justify-content: center;
     align-items: flex-start;
 }
-#modal3{
-    height: 90%;
-    width: 70%;
-}
 mark{
     background-color: rgba(255, 251, 0, 0.35);
     color: white;
 }
 .eighthPage{
-    height: 45vh;
-    overflow:hidden;
+    height: 52vh;
 }
 .eighthPage img{
+    width: 100%;
     height: auto;
-    width: auto;
-    border: 3px solid silver;
-    border-style:ridge;
-    max-height: 80%;
-    max-width: 100%;
+    object-fit: cover;
+    border-radius: 300px;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;;
 }
   
 /*----------> Carousel <-----------*/
@@ -483,16 +477,26 @@ mark{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
+}
+#carouselImages{
+    height: 50vh;
+    width: 40vw;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;    
 }
 #carouselButtons{
-    padding-top: 5px;
     cursor: pointer;
     display: flex;
     width: 180px;
     justify-content: space-between;
     align-items: center;
     font-size: 3rem;
+    padding-bottom: 30px;
 }
 
 
@@ -626,30 +630,15 @@ mark{
         height: auto;
         width: 12%;
     }
-    .eighthPage{
-        height: 45vh;
+    #carouselImages{
+        height: 35vh;
+        width: 90vw;
+        border-radius: 10px;
     }
-    .eighthPage img{
-        height: auto;
-        width: auto;
-        max-height: 80%;
-        max-width: 90%;
+    button:hover{
+        transform: none;
+        color: aqua;
     }
-    #carousel{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;    
-    }
-    #carouselButtons{
-        display: flex;
-        position:absolute;
-        top: 6580px;
-        text-shadow: 2px 2px black;
-    }
-
 }
 
   

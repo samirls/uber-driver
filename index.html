@@ -29,7 +29,7 @@
             <button id="buttonFormasDePagamento">Formas de Pagamento</button>
         </div>
         <div>
-            <button id="buttonImagens">Imagens</button>
+            <button id="buttonImagens" onclick="scrollToBottom()">Imagens</button>
         </div>
     </div>
     <div class="prePreSecondPage">
@@ -106,15 +106,17 @@
     </div>
     <div class="eighthPage">
         <div id="carousel">
-            <img id="carouselImage1" src="./img/corolla-frente.jpg">
-            <img id="carouselImage2" style="display: none" src="./img/corolla-frente2.jpg">
-            <img id="carouselImage3" style="display: none" src="./img/corolla-interior-frente.jpg">
-            <img id="carouselImage4" style="display: none" src="./img/corolla-interior-tras.jpg">
-            <img id="carouselImage5" style="display: none" src="./img/corolla-tras.jpg">
-            <img id="carouselImage6" style="display: none" src="./img/italo.jpg">
-            <img id="carouselImage7" style="display: none" src="./img/passenger.jpg">
-            <img id="carouselImage8" style="display: none" src="./img/passenger2.jpg">
-            <img id="carouselImage9" style="display: none" src="./img/passenger3.jpg">
+            <div id="carouselImages">
+                <img id="carouselImage1" src="./img/corolla-frente.jpg">
+                <img id="carouselImage2" style="display: none" src="./img/corolla-frente2.jpg">
+                <img id="carouselImage3" style="display: none" src="./img/corolla-interior-frente.jpg">
+                <img id="carouselImage4" style="display: none" src="./img/corolla-interior-tras.jpg">
+                <img id="carouselImage5" style="display: none" src="./img/corolla-tras.jpg">
+                <img id="carouselImage6" style="display: none" src="./img/italo.jpg">
+                <img id="carouselImage7" style="display: none" src="./img/passenger.jpg">
+                <img id="carouselImage8" style="display: none" src="./img/passenger2.jpg">
+                <img id="carouselImage9" style="display: none" src="./img/passenger3.jpg">
+            </div>
             <div id="carouselButtons">
                 <button id="photoBack">&#8617</button>
                 <div id="photoNumber" style="font-size: 2rem;">1</div>
@@ -142,16 +144,10 @@
     <div class="fullscreen-container2" style="display: none;">
         <div id="modal2">
             <div id="close-page2"><img src="./img/close-circle-outline.png"></div>
-            <div id="modal2Title">Aceito dinheiro, PIX, PicPay e cartão de débito/crédito.</div>
+            <div id="modal2Title"><u>Aceito dinheiro, PIX, PicPay e cartão de débito/crédito.</u></div>
             <div id="chavePix1">Chave PIX por E-mail: <mark>fulanofulano@ficticio.com</mark></div>
             <div id="chavePix2">Chave PIX por telefone: <mark>(27)12345-7891</mark></div>
             <div id="chavePicPay">PicPay: <mark>@fulanoFicticio</mark></div>
-        </div>
-    </div>
-    <div class="fullscreen-container3" style="display: none;">
-        <div id="modal3">
-            <div id="close-page3"><img src="./img/close-circle-outline.png"></div>
-
         </div>
     </div>
 </body>
