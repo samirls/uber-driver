@@ -182,7 +182,7 @@ function back() {
 
 
 
-let carouselTime = 2500;
+let carouselTime = 3000;
 setInterval(function() {
     forward();
   }, carouselTime);

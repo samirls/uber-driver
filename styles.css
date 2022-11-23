@@ -399,7 +399,27 @@ button:hover{
     position:absolute;
     font-size: 1.5rem;
     gap:20px;
+
+    animation: modalsAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+@keyframes modalsAnimation{
+    0% {
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+/* @keyframes modalsAnimation{
+    0% {
+        transform: skew(0deg, 90deg);
+    }
+    100%{
+        transform: skew(0deg, 180deg);
+    }
+} */
 #close-page img, #close-page2 img, #close-page3 img{
     height: auto;
     width: 30px;
@@ -506,11 +526,26 @@ mark{
     height: auto;
     object-fit: cover;
     border-radius: 300px;
-    transition: 200ms opacity ease-in-out;
-    transition-delay: 200ms;;
+
+    animation: eighthPageAnimation 200ms;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
-  
-/*----------> Carousel <-----------*/
+@keyframes eighthPageAnimation{
+    0% {
+        opacity: 0.0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0.0;
+    }
+}
 #carousel{
     height: 100%;
     width: 100%;
