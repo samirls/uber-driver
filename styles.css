@@ -428,10 +428,10 @@ button:hover{
 #close-page img:hover, #close-page2 img:hover, #pauseCarousel:hover, #startCarousel:hover{
     cursor: pointer;
     transform:rotate(360deg);
-    scale: 1.3;
+    scale: 1;
 }
 #close-page img:active, #close-page2 img:active, #pauseCarousel:active, #startCarousel:active{
-    scale: 0.6;
+    scale: 1.2;
     transition: 0ms;
 }
 #modalPhone3 img{
