@@ -420,15 +420,19 @@ button:hover{
         transform: skew(0deg, 180deg);
     }
 } */
-#close-page img, #close-page2 img, #close-page3 img{
+#close-page img, #close-page2 img, #pauseCarousel, #startCarousel{
     height: auto;
     width: 30px;
     transition: 500ms;
 }
-#close-page img:hover, #close-page2 img:hover, #close-page3 img:hover{
+#close-page img:hover, #close-page2 img:hover, #pauseCarousel:hover, #startCarousel:hover{
     cursor: pointer;
-    transform:rotate(180deg);
+    transform:rotate(360deg);
     scale: 1.3;
+}
+#close-page img:active, #close-page2 img:active, #pauseCarousel:active, #startCarousel:active{
+    scale: 0.6;
+    transition: 0ms;
 }
 #modalPhone3 img{
     height: auto;
@@ -521,7 +525,7 @@ mark{
 .eighthPage{
     height: 52vh;
 }
-.eighthPage img{
+.eighthPage #carouselImages img{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -529,9 +533,16 @@ mark{
 
     animation: eighthPageAnimation 200ms;
     animation-duration: 3s;
-    animation-fill-mode: forwards;
 }
 @keyframes eighthPageAnimation{
+    0% {
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+}
+/* @keyframes eighthPageAnimation{
     0% {
         opacity: 0.0;
     }
@@ -545,7 +556,7 @@ mark{
     100%{
         opacity: 0.0;
     }
-}
+} */
 #carousel{
     height: 100%;
     width: 100%;
@@ -567,7 +578,7 @@ mark{
 #carouselButtons{
     cursor: pointer;
     display: flex;
-    width: 180px;
+    width: 260px;
     justify-content: space-between;
     align-items: center;
     font-size: 3rem;

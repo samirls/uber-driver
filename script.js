@@ -182,7 +182,20 @@ function back() {
 
 
 
-let carouselTime = 3000;
-setInterval(function() {
+//Code to pause and play buttons
+let isPaused = false;
+
+let interval = setInterval(function() {
+  if(!isPaused) {
     forward();
-  }, carouselTime);
+  }
+}, 3000);
+
+document.getElementById("pauseCarousel").addEventListener("click", pause);
+document.getElementById("startCarousel").addEventListener("click", play);
+function play(){
+  isPaused = false;
+}
+function pause(){
+  isPaused = true;
+}
