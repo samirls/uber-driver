@@ -67,8 +67,11 @@ document.addEventListener("click", (e) => {
 //carousel
 let carousel = 1;
 
-document.getElementById("photoForward").addEventListener("click", forward);
-document.getElementById("photoBack").addEventListener("click", back);
+const photoForward = document.getElementById("photoForward");
+const photoBack = document.getElementById("photoBack");
+
+photoForward.addEventListener("click", forward);
+photoBack.addEventListener("click", back);
 
 function forward() {
   carousel += 1;
@@ -184,15 +187,24 @@ function back() {
 
 //Code to pause and play buttons
 let isPaused = false;
+const statusPaused = document.getElementById("statusPaused");
 
 let interval = setInterval(function() {
   if(!isPaused) {
+    statusPaused.setAttribute("style", "display: none");
     forward();
+  }
+  if(isPaused) {
+    statusPaused.setAttribute('style',"display: block");
   }
 }, 3000);
 
-document.getElementById("pauseCarousel").addEventListener("click", pause);
-document.getElementById("startCarousel").addEventListener("click", play);
+const startCarousel = document.getElementById("startCarousel");
+const pauseCarousel = document.getElementById("pauseCarousel");
+
+startCarousel.addEventListener("click", play);
+pauseCarousel.addEventListener("click", pause);
+
 function play(){
   isPaused = false;
 }
